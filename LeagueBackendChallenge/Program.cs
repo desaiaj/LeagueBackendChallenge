@@ -1,6 +1,7 @@
 ﻿using System.Numerics;
 
 namespace League.BackendChallenge;
+
 public class LeagueBackendChallenge
 {
     static void Main(string[] args)
@@ -12,8 +13,8 @@ public class LeagueBackendChallenge
 
             var challenge = new LeagueBackendChallenge();
 
-            string[] fileData;
-            fileData = challenge.ReadFile_Filtered_SpaceOrEmpty(args[0]);
+            string filePath = args[0];
+            string[] fileData = challenge.ReadFile_Filtered_SpaceOrEmpty(filePath);
 
             List<List<int>> matrix = new List<List<int>>();
             challenge.PrepareMatrix(fileData, matrix);

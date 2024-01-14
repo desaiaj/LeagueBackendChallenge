@@ -1,6 +1,6 @@
 using League.BackendChallenge;
 
-namespace LeagueBackendChallengeTests
+namespace League.BackendChallengeTests
 {
     [TestClass]
     public class LeagueBackendChallengeTests
