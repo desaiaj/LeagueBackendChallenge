@@ -1,8 +1,7 @@
 {
   "profiles": {
     "LeagueBackendChallenge": {
-      "commandName": "Project",
-      "commandLineArgs": "matrix.csv"
+      "commandName": "Project"
     }
   }
 }

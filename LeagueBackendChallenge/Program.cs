@@ -8,12 +8,13 @@ public class LeagueBackendChallenge
     {
         try
         {
-            if (args.Length <= 0)
+            Console.Write("Enter filename or absolute path to the file: ");
+            string? filePath = Console.ReadLine();
+            if (string.IsNullOrEmpty(filePath))
                 throw new Exception("No filename provided, expects file with Matrix");
 
             var challenge = new LeagueBackendChallenge();
 
-            string filePath = args[0];
             string[] fileData = challenge.ReadFile_Filtered_SpaceOrEmpty(filePath);
 
             List<List<int>> matrix = new List<List<int>>();
